@@ -154,6 +154,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ ᴊᴏɪɴ ɢʀᴏᴜᴘ ⚡", url="https://t.me/+ebT3TGDywLM0OGY9") ] ] )
                     protect_content=msg.get('protect', False),
                     )
             except Exception as e:
@@ -248,6 +249,11 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡Mᴀɪɴ Gʀᴏᴜᴘ⚡", url="https://t.me/+ebT3TGDywLM0OGY9"),
+
+                                               InlineKeyboardButton("💥Sʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/Cinemathattakam_Group") ],
+
+                                             [ InlineKeyboardButton("🎭Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ🎭", url="https://t.me/UPDATECHANNELHUB") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
